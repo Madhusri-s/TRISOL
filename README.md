@@ -18,9 +18,6 @@ This model is designed for solar photovoltaic (PV) panel detection in satellite 
 7. Detection outputs are visualized and saved as artifacts.
 8. The entire pipeline runs inside a Docker container for consistency.
 9. Results can be accessed locally or through deployed services.
-## 🏗️ Architecture Flow
-
-![Architecture Diagram](architecture.png)
 
 
 - **Base Model**: YOLOv8 (You Only Look Once v8)
