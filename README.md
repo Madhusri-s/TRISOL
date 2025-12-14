@@ -7,6 +7,18 @@ This project implements an end-to-end solar photovoltaic (PV) detection pipeline
 This model is designed for solar photovoltaic (PV) panel detection in satellite imagery as part of the EcoInnovators Ideathon 2026 challenge.
 
 ### Model Architecture
+- ## 🏗️ Architecture Flow
+
+1. The user uploads rooftop or solar panel images as input.
+2. The input data is passed to the inference pipeline.
+3. Preprocessing is applied to resize and normalize images.
+4. The trained deep learning model is loaded from the model directory.
+5. The model performs PV panel detection and classification.
+6. Prediction results are generated in JSON format.
+7. Detection outputs are visualized and saved as artifacts.
+8. The entire pipeline runs inside a Docker container for consistency.
+9. Results can be accessed locally or through deployed services.
+
 - **Base Model**: YOLOv8 (You Only Look Once v8)
 - **Input Resolution**: 640x640 pixels
 - **Output**: Bounding boxes with confidence scores for PV panels
