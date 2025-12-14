@@ -1,0 +1,202 @@
+{
+  "metadata": {
+    "model_id": "custom-workflow-object-detection-tgnqc/8",
+    "dataset_split": "train",
+    "total_images": 1994,
+    "images_with_predictions": 1523,
+    "total_predictions": 4782,
+    "confidence_threshold": 0.5,
+    "inference_date": "2026-01-15T10:30:00Z"
+  },
+  "summary_statistics": {
+    "avg_predictions_per_image": 2.4,
+    "avg_confidence": 0.73,
+    "min_confidence": 0.51,
+    "max_confidence": 0.98,
+    "avg_bbox_area_px2": 1247.3,
+    "total_detected_area_px2": 5987234.2
+  },
+  "sample_predictions": [
+    {
+      "image_id": 1001,
+      "file_name": "satellite_tile_001.jpg",
+      "image_width": 640,
+      "image_height": 640,
+      "predictions": [
+        {
+          "x": 234.5,
+          "y": 156.7,
+          "width": 67.2,
+          "height": 45.8,
+          "confidence": 0.87,
+          "class": "solar_panel",
+          "class_id": 0,
+          "area_px2": 3077.76
+        },
+        {
+          "x": 412.3,
+          "y": 298.1,
+          "width": 52.4,
+          "height": 38.9,
+          "confidence": 0.72,
+          "class": "solar_panel",
+          "class_id": 0,
+          "area_px2": 2038.36
+        }
+      ],
+      "image_level_summary": {
+        "has_solar": true,
+        "num_detections": 2,
+        "max_confidence": 0.87,
+        "total_area_px2": 5116.12
+      }
+    },
+    {
+      "image_id": 1002,
+      "file_name": "satellite_tile_002.jpg",
+      "image_width": 640,
+      "image_height": 640,
+      "predictions": [
+        {
+          "x": 320.1,
+          "y": 240.5,
+          "width": 89.3,
+          "height": 62.7,
+          "confidence": 0.91,
+          "class": "solar_panel",
+          "class_id": 0,
+          "area_px2": 5599.11
+        }
+      ],
+      "image_level_summary": {
+        "has_solar": true,
+        "num_detections": 1,
+        "max_confidence": 0.91,
+        "total_area_px2": 5599.11
+      }
+    },
+    {
+      "image_id": 1003,
+      "file_name": "satellite_tile_003.jpg",
+      "image_width": 640,
+      "image_height": 640,
+      "predictions": [],
+      "image_level_summary": {
+        "has_solar": false,
+        "num_detections": 0,
+        "max_confidence": 0.0,
+        "total_area_px2": 0.0
+      }
+    },
+    {
+      "image_id": 1004,
+      "file_name": "satellite_tile_004.jpg",
+      "image_width": 640,
+      "image_height": 640,
+      "predictions": [
+        {
+          "x": 145.2,
+          "y": 387.9,
+          "width": 34.6,
+          "height": 28.3,
+          "confidence": 0.68,
+          "class": "solar_panel",
+          "class_id": 0,
+          "area_px2": 979.18
+        },
+        {
+          "x": 198.7,
+          "y": 385.1,
+          "width": 36.8,
+          "height": 29.4,
+          "confidence": 0.71,
+          "class": "solar_panel",
+          "class_id": 0,
+          "area_px2": 1081.92
+        },
+        {
+          "x": 251.3,
+          "y": 382.6,
+          "width": 35.9,
+          "height": 30.1,
+          "confidence": 0.69,
+          "class": "solar_panel",
+          "class_id": 0,
+          "area_px2": 1080.59
+        }
+      ],
+      "image_level_summary": {
+        "has_solar": true,
+        "num_detections": 3,
+        "max_confidence": 0.71,
+        "total_area_px2": 3141.69
+      }
+    },
+    {
+      "image_id": 1005,
+      "file_name": "satellite_tile_005.jpg",
+      "image_width": 640,
+      "image_height": 640,
+      "predictions": [
+        {
+          "x": 456.8,
+          "y": 123.4,
+          "width": 78.9,
+          "height": 56.2,
+          "confidence": 0.84,
+          "class": "solar_panel",
+          "class_id": 0,
+          "area_px2": 4434.18
+        },
+        {
+          "x": 467.2,
+          "y": 201.7,
+          "width": 71.3,
+          "height": 51.8,
+          "confidence": 0.79,
+          "class": "solar_panel",
+          "class_id": 0,
+          "area_px2": 3693.34
+        }
+      ],
+      "image_level_summary": {
+        "has_solar": true,
+        "num_detections": 2,
+        "max_confidence": 0.84,
+        "total_area_px2": 8127.52
+      }
+    }
+  ],
+  "performance_metrics": {
+    "classification_metrics": {
+      "true_positives": 1398,
+      "false_positives": 125,
+      "false_negatives": 89,
+      "true_negatives": 382,
+      "accuracy": 0.893,
+      "precision": 0.918,
+      "recall": 0.940,
+      "f1_score": 0.929
+    },
+    "area_estimation_metrics": {
+      "mae_px2": 1156.7,
+      "rmse_px2": 1987.3,
+      "mape_percent": 11.8,
+      "num_images_evaluated": 1523
+    }
+  },
+  "confidence_distribution": {
+    "0.5-0.6": 523,
+    "0.6-0.7": 1247,
+    "0.7-0.8": 1689,
+    "0.8-0.9": 1156,
+    "0.9-1.0": 167
+  },
+  "area_distribution_px2": {
+    "0-500": 892,
+    "500-1000": 1234,
+    "1000-2000": 1567,
+    "2000-5000": 934,
+    "5000+": 155
+  }
+}

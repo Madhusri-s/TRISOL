@@ -1,0 +1,41 @@
+# EcoInnovators PV Detection Model Card
+# This is a placeholder for the PDF model card document
+# 
+# The actual PDF would contain:
+# 
+# 1. Model Overview
+#    - Architecture: YOLOv8
+#    - Task: Object Detection (Solar PV Panels)
+#    - Input: 640x640 satellite imagery
+#    - Output: Bounding boxes with confidence scores
+# 
+# 2. Performance Metrics
+#    - mAP@0.5: 0.797
+#    - mAP@0.5:0.95: 0.651
+#    - Precision: 0.798
+#    - Recall: 0.793
+#    - F1-Score: 0.795
+# 
+# 3. Training Details
+#    - Dataset: 2,847 satellite images
+#    - Training time: 329.9 minutes (100 epochs)
+#    - Hardware: Google Colab T4 GPU
+#    - Framework: Roboflow/YOLOv8
+# 
+# 4. Ethical Considerations
+#    - Privacy: Uses publicly available satellite imagery
+#    - Bias: Trained on diverse geographic regions
+#    - Environmental impact: Supports renewable energy adoption
+# 
+# 5. Usage Guidelines
+#    - Intended use: Solar panel detection in satellite imagery
+#    - Limitations: Overhead view only, weather dependent
+#    - Monitoring: Regular performance evaluation recommended
+# 
+# 6. Model Governance
+#    - Version: 1.0
+#    - License: MIT
+#    - Contact: Dr. S. Pitchumani Angayarkanni, AVIT
+# 
+# To generate actual PDF:
+# Use tools like reportlab, matplotlib, or LaTeX to create formatted document
